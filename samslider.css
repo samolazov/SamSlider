@@ -1,0 +1,56 @@
+﻿@charset "utf-8";
+
+/* ------------------------------------
+SLIDER
+------------------------------------ */
+.slider {
+	border: 1px solid #888888;
+	border-radius: 3px;
+	overflow: hidden;
+	position: relative;
+}
+.slider div {
+	position: absolute;
+	top: 0;
+}
+.slider div:first-of-type {
+	z-index: 20;
+}
+.slider div:last-of-type {
+	position: relative;
+}
+.slider div img {
+	width: 100%;
+}
+.slider div p {
+	background: url("gray-dark-lines.gif");
+	color: white;
+	margin: 0;
+	padding: 8px 0;
+	width: 100%;
+}
+.slider ul {
+	bottom: 16px;
+	display: block;
+	margin: 5px 8px;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 50;
+}
+.slider ul li {
+	background: white;
+	border-radius: 50%;
+	box-shadow: 0 0 1px gray;
+	display: inline-block;
+	height: 10px;
+	margin: 6px;
+	transition: 500ms ease;
+	width: 10px;
+}
+.slider ul li:hover, .slider ul li.active {
+	background: #b00;
+	cursor: pointer;
+	margin-bottom: 7px;
+}
